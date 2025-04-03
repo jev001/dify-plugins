@@ -1,0 +1,50 @@
+version: 0.0.1
+type: plugin
+author: jev001
+name: gitlab_person
+label:
+  en_US: gitlab_person
+  ja_JP: gitlab_person
+  zh_Hans: gitlab_person
+  pt_BR: gitlab_person
+description:
+  en_US: gitlab person
+  ja_JP: gitlab person
+  zh_Hans: gitlab person
+  pt_BR: gitlab person
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: true
+      llm: true
+      text_embedding: true
+      rerank: true
+      tts: true
+      speech2text: true
+      moderation: true
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/gitlab_person.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-04-03T19:28:33.178123+08:00
+privacy: PRIVACY.md
+verified: false

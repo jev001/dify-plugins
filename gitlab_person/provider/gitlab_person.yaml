@@ -1,0 +1,17 @@
+identity:
+  author: jev001
+  name: gitlab_person
+  label:
+    en_US: gitlab_person
+    zh_Hans: gitlab_person
+    pt_BR: gitlab_person
+  description:
+    en_US: gitlab person
+    zh_Hans: gitlab person
+    pt_BR: gitlab person
+  icon: icon.svg
+tools:
+  - tools/gitlab_person.yaml
+extra:
+  python:
+    source: provider/gitlab_person.py

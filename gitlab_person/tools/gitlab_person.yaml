@@ -1,0 +1,30 @@
+identity:
+  name: gitlab_person
+  author: jev001
+  label:
+    en_US: gitlab_person
+    zh_Hans: gitlab_person
+    pt_BR: gitlab_person
+description:
+  human:
+    en_US: gitlab person
+    zh_Hans: gitlab person
+    pt_BR: gitlab person
+  llm: gitlab person
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: gitlab person
+      zh_Hans: gitlab person
+      pt_BR: gitlab person
+    llm_description: gitlab person
+    form: llm
+extra:
+  python:
+    source: tools/gitlab_person.py
